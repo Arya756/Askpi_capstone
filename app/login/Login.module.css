@@ -1,19 +1,104 @@
 .container{
+
     background: linear-gradient(135deg,#5b2be0, #ff6b00);
     display: flex;
     height: 100vh;
+    display: flex;
     justify-content: center;
     align-items: center;
+
+}
+
+.coin1{
+    position: absolute;
+    top: 10%;
+    left:5%;
+}
+.coin2{
+    position: absolute;
+    top: 20%;
+    right:8%;
+}
+.coin3{
+    position: absolute;
+    top: 15%;
+    left:2%;
+}
+.coin4{
+    position: absolute;
+    top: 75%;
+    right:25%;
+}
+.coin5{
+    position: absolute;
+    top: 56%;
+    left:15%;
+}
+.prop1{
+    position: absolute;
+    top: 80%;
+    right:15%;
+}
+.prop2{
+    position: absolute;
+    top: 5%;
+    right:15%;
+}
+.prop3{
+    position: absolute;
+    top: 10%;
+    left:95%;
+}
+.prop4{
+    position: absolute;
+    top: 80%;
+    left:15%;
+}
+.prop5{
+    position: absolute;
+    top: 70%;
+    left:25%;
+}
+.coin6{
+    position: absolute;
+    top: 36%;
+    right: 30%;
+}
+.prop6{
+    position: absolute;
+    top: 20%;
+    left:10%;
+}
+.coin7{
+    position: absolute;
+    top: 46%;
+    left:6%;
+}
+.prop7{
+    position: absolute;
+    top: 40%;
+    right:15%;}
+
+.coin8{
+    position: absolute;
+    top: 5%;
+    left:25%;
+    }
+.prop8{
+    position: absolute;
+    bottom: 10%;
+    right:45%;
 }
 
 .card{
-     
+    position: relative;
     background-color: white;
     border-radius: 20px;
     text-align: center;
     padding: 3rem 2rem;
     width: 320px;
     box-shadow: 20px 20px 40px rgba(0,0,0,0.15);
+
 }
 .logo{
     display: flex;
@@ -52,9 +137,58 @@
     font-weight: bold;
 }
 .character{
-    position: absolute;
-    bottom: 180px;
-    width: 150px;
-    right: 520px;
+    position: fixed;
+    right: 34%;
+    bottom: 20%;
+   
    
 }
+.error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+/* Responsive */
+
+@media (max-width:1024px){
+    .card{
+        width: 80%;
+        padding: 2.5rem 1.5rem;
+    }
+    .character{
+        top: 65%;
+        right: 5%;
+        bottom: 100px;
+        width: 120px;
+    }
+}
+
+@media (max-width:768px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+    .card{
+        width: 100%;
+        max-width: 300px;
+        padding: 2rem 1rem;
+        margin-top: 4rem;
+        position: relative;
+        
+    }
+    .character{
+        position: absolute;
+        bottom: -10px;
+        right: -55px;
+        top: 300px;
+      
+
+
+        
+    }
+  
+}
+
