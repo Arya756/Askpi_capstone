@@ -2,7 +2,7 @@
 import Image from "next/image"
 import React,{useState} from "react"
 import styles from "./Login.module.css"
-import {auth} from "@/lib/firebase"
+import {auth }from "@/lib/firebase"
 import { signInWithEmailAndPassword } from "firebase/auth"
 import { useRouter } from "next/navigation"
 
@@ -20,7 +20,7 @@ const LoginPage = () => {
         try{
             const userCredentials= await signInWithEmailAndPassword(auth,email,password)
             console.log("Logged in user:",userCredentials.user)
-            router.push("/") 
+            router.push("/questions") 
         } catch (err){
             console.log("login error:", err)
             setError("Invalid email or password")

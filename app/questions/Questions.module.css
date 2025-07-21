@@ -97,3 +97,26 @@
     font-size: 0.8rem;
     color: #999;
   }
+  .user{
+    color:black;
+  }
+  .questionContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .solveButton {
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .solveButton:hover {
+    background-color: #005ad3;
+    transform: translateY(-2px);
+  }
