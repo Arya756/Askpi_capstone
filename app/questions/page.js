@@ -21,7 +21,7 @@ const QuestionsPage = () => {
       if (!user) {
         router.push("/login")
       } else {
-        setLoading(false)
+        setLoading(false) 
       }
     })
     return () => unsubscribe()

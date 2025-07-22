@@ -163,6 +163,15 @@
         bottom: 100px;
         width: 120px;
     }
+    .coin1, .coin2, .coin3, .coin4, .coin5,
+    .coin6, .coin7, .coin8,
+    .prop1, .prop2, .prop3, .prop4, .prop5, .prop6, .prop7, .prop8 {
+        transform: scale(0.8);
+    }
+
+    .coin3 { left: 4%; }
+    .coin4 { right: 15%; }
+    .prop3 { left: 85%; }
 }
 
 @media (max-width:768px){
@@ -185,6 +194,30 @@
         right: -55px;
         top: 300px;        
     }
+    .coin1, .coin2, .coin3, .coin4, .coin5,
+    .coin6, .coin7, .coin8,
+    .prop1, .prop2, .prop3, .prop4, .prop5, .prop6, .prop7, .prop8 {
+        transform: scale(0.5);
+    }
+
+    .coin1 { top: 8%; left: 5%; }
+    .coin2 { top: 15%; right: 5%; }
+    .coin3 { top: 12%; left: 3%; }
+    .coin4 { top: 70%; right: 10%; }
+    .coin5 { top: 55%; left: 10%; }
+    .coin6 { top: 32%; right: 20%; }
+    .coin7 { top: 44%; left: 5%; }
+    .coin8 { top: 4%; left: 20%; }
+
+    .prop1 { top: 75%; right: 10%; }
+    .prop2 { top: 5%; right: 10%; }
+    .prop3 { top: 8%; left: 80%; }
+    .prop4 { top: 75%; left: 10%; }
+    .prop5 { top: 65%; left: 20%; }
+    .prop6 { top: 18%; left: 8%; }
+    .prop7 { top: 38%; right: 10%; }
+    .prop8 { bottom: 8%; right: 35%; }
+
   
 }
 
