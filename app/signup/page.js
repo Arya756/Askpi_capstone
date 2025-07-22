@@ -2,9 +2,10 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import styles from "./signup.module.css"; 
-import auth from "@/lib/firebase";
+import {auth} from "@/lib/firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const SignupPage = () => {
   const [email, setEmail] = useState("");
